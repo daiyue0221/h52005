@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			ul{
+				list-style:none;
+			}
+			a{
+				text-decoration: none;
+			}
+			.first>div{
+				/* display: block; */
+				/* height: 28px; */
+				width: 150px;
+				line-height: 32px;
+				/* border: 1px solid #000; */
+				background: skyblue;
+				overflow: hidden;
+				cursor: pointer;
+			}
+			.first>div>span{
+				display: block;
+				position: relative;
+				padding: 0 10px;
+				color: #fff;
+				font-size: 18px;
+				/* padding-left: 10px; */
+			}
+			.first>div>span>i{
+				display: block;
+				height: 20px;
+				width: 20px;
+				background: url(../images/arr.png) no-repeat center center;
+				background-size: 80% 80%;
+				position: absolute;
+				right: 20px;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+				transition: 0.5s;
+			}
+			.first>div>span>i.rotate{
+				transform: rotate(180deg);
+				transition: 0.5s;
+			}
+			.ul_child>li{
+				height: 0px;
+				line-height: 20px;
+				overflow: hidden;
+				background: lightgreen;
+				transition: 0.5s;
+			}
+			.ul_child.open>li{
+				height: 20px;
+				line-height: 20px;
+				transition: 0.5s;
+			}
+			.ul_child>li>a{
+				font-size: 14px;
+				padding-left: 30px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="first">
+			<div>
+				<span>湖畔公主<i></i></span>
+				<ul class="ul_child">
+					<li><a href="#" class="active">卢森堡长廊</a></li>
+					<li><a href="#">星辰水晶教堂</a></li>
+					<li><a href="#">神恩教堂</a></li>
+					<li><a href="#">依云湖</a></li>
+				</ul>
+			</div>
+			<div>
+				<span href="#">星光夏朵<i></i></span>
+				<ul class="ul_child">
+					<li><a href="#">重庆蓝湖</a></li>
+					<li><a href="#">海南三亚</a></li>
+				</ul>
+			</div>
+			<div>
+				<span href="#">秘密花园<i></i></span>
+				<ul class="ul_child">
+					<li><a href="#">重庆蓝湖</a></li>
+					<li><a href="#">海南三亚</a></li>
+				</ul>
+			</div>
+			<div>
+				<span href="#">梦幻空间<i></i></span>
+				<ul class="ul_child">
+					<li><a href="#">重庆蓝湖</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			var div = document.querySelectorAll(".first>div");
+			var span_i = document.querySelectorAll(".first>div>span>i");
+			var ul_child = document.querySelectorAll(".ul_child");
+			for (let i = 0; i < div.length; i++) {
+				div[i].onclick = function(){
+					if(this.className == "open"){
+						clear();
+						ul_child[i].className = " ul_child";
+						div[i].className = "";
+						span_i[i].className = "";
+					}else{
+						clear();
+						ul_child[i].className += " open";
+						div[i].className = "open";
+						span_i[i].className += "rotate";
+					}
+					
+					
+				}
+			}
+			function clear(){
+				for (var j = 0; j < div.length; j++) {
+					div[j].className = "";
+					span_i[j].className = "";
+					ul_child[j].className = "ul_child";
+				}
+			}
+		</script>
+	</body>
+</html>

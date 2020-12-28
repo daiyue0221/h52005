@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>练习下拉列表</title>
+	<link rel="stylesheet" href="../css/public.css">
+	<link rel="stylesheet" href="../css/reset.css">
+	 <!-- 引入iconfont -->
+	<link rel="stylesheet" href="../font/iconfont.css">
+	<link rel="stylesheet" href="../css/index.css">
+	<style type="text/css">
+		.header{
+			height: 50px;
+			width: 500px;
+			margin:auto;
+	
+		}
+		.header ul li{
+			width: 98px;
+			height: 50px;
+			border: 1px solid #CCCCCC;
+			float: left;
+			line-height: 50px;
+			text-align: center;	
+		}
+		.header a{
+			color: #000000;
+		}
+		.header .ul_child{
+			
+		}
+		.header .ul_child li{
+			width: 150px;
+			height: 0;
+			text-align: center;	
+			overflow: hidden;
+			border: none;
+			/* transition: 0.7s; */
+			-webkit-transition: height 200ms ease-in;
+			-moz-transition: height 200ms ease-in;
+			-o-transition: height 200ms ease-in;
+			transition: height 200ms ease-in;
+		}
+		.header ul li:hover .ul_child li{
+			height: 50px;
+			border: 1px solid #CCCCCC;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="header">
+		<ul>
+			<li>
+				<a href="#">首页</a>
+				<ul class="ul_child">
+					<li>
+						<a href="#">首页1</a>
+					</li>
+					<li><a href="#">首页2</a></li>
+					<li><a href="#">首页3</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">拍摄基地</a>
+				<ul class="ul_child">
+					<li><a href="#">拍摄基地1</a></li>
+					<li><a href="#">拍摄基地2</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">真实客照</a>
+				<ul class="ul_child">
+					<li><a href="#">拍摄基地1</a></li>
+					<li><a href="#">拍摄基地2</a></li>
+					<li><a href="#">拍摄基地2</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">选择影师</a>
+				<ul class="ul_child">
+					<li><a href="#">拍摄基地1</a></li>
+				</ul>
+			</li>
+			<li><a href="#">礼服妆容</a></li>
+		</ul>	
+	</div>
+
+</body>
+</html>

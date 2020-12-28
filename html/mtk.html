@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>点击显示弹框</title>
+		  <style type="text/css">
+		    *{
+				margin:0;
+				padding:0;
+			}
+			#model{
+				width:500px;
+				height:300px;
+				margin-left:-250px;
+				margin-top:-150px;
+				background-color: blue;
+				position:fixed;
+				top:50%;
+				left:50%;
+				z-index: 200;
+			}
+			#outer{
+				position:fixed;
+				top:0;
+				left:0;
+				width:100%;
+				height:100%;
+				z-index:100;
+				padding-top:10%;
+				text-align:center;
+				background-repeat:no-repeat;
+				background-position:center center;
+				background-color:#000;
+				background-color:rgba(0,0,0,0.5);
+				filter:alpha(opacity=50);
+				display: none;
+			}
+			.d1{
+				width: 100%;
+				height: 800px;
+				background: #0077AA;
+			}
+			.d2{
+				width: 100%;
+				height: 800px;
+				background: pink;
+			}
+		  </style>
+	</head>
+	
+	<body>
+		<button id="show">弹出模态框</button>
+		    <div id="outer">
+		        <div tabindex="-1" id="model"></div>
+				
+		    </div>
+			<div class="d1">
+				
+			</div>
+			<div class="d2">
+				
+			</div>
+			
+		    <script>
+		        document.getElementById("model").onblur=function(){
+		            document.getElementById("outer").style.display="none"
+		        }
+		        document.getElementById("model").onfocus=function(){
+		            document.getElementById("outer").style.display="block"
+		        }
+		        document.getElementById("show").onclick=function(){
+		            document.getElementById("outer").style.display="block"
+		        }
+		    </script>
+	</body>
+</html>

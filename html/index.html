@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/reset.css">
+     <!-- 引入iconfont -->
+    <link rel="stylesheet" href="../font/iconfont.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <header>
+    	<div class="top_bar">
+    		<div class="wrapper">
+    			<div class="top_logo">
+    				<img src="../images/logo.png" >
+    				<span>我们愿用一生的彼此陪伴，来许愿婚姻的美满</span>
+    			</div>
+    			<div class="s_register">
+    				<input type="text" name="search" id="" value="" placeholder="搜索"/>
+    				<a href="#" class="user">登录</a>
+    				<a href="#" class="user">注册</a>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="top_nav">
+    		<div class="wrapper">
+    			<ul class="link">
+    				<li class="active"><a href="#">首页</a></li>
+    				<li>
+    					<a href="shoot-base.html">拍摄基地</a>
+    					<ul class="ul_child">
+    						<li><a href="#">重庆蓝湖</a></li>
+    						<li><a href="#">海南三亚</a></li>
+    						<li><a href="#">香格里拉</a></li>
+    					</ul>
+    				</li>
+    				<li>
+    					<a href="#">真实客照</a>
+    					<ul class="ul_child">
+    						<li><a href="#">客照展示</a></li>
+    						<li><a href="#">样片析赏</a></li>
+    					</ul>
+    				</li>
+    				<li>
+    					<a href="#">选择影师</a>
+    					<ul class="ul_child">
+    						<li><a href="#">陈默默</a></li>
+    						<li><a href="#">陈曼</a></li>
+    						<li><a href="#">张悦</a></li>
+    						<li><a href="#">犹乙</a></li>
+    					</ul>
+    				</li>
+    				<li>
+    					<a href="#">礼服妆容</a>
+    					<ul class="ul_child">
+    						<li><a href="#">西式浪漫</a></li>
+    						<li><a href="#">中国古典</a></li>
+    					</ul>
+    				</li>
+    				<li><a href="#">品牌简介</a></li>
+    			</ul>
+    		 </div>
+    	</div>
+    </header>
+    <!-- 轮播图 -->
+    <div id="carousel">
+        <div class="c_img">
+            <img src="../images/carousel_1.jpg" alt="" class="active">
+            <img src="../images/carousel_2.jpg" alt="">
+            <img src="../images/carousel_3.jpg" alt="">
+        </div>
+        <ul>
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+	
+	<!-- 广告栏-->
+	<div id="index_ad">
+		<img src="../images/shooting_01.png" >
+		<p>来呀 点啊</p>
+	</div>
+	
+	<!-- 操作栏 -->
+	<ul id="index_operate">
+		<li>
+			<a href="">
+				<i class="iconfont">&#xe607;</i>
+				<i class="active">下载</i>
+			</a>
+			<div class="index_down">
+			</div>
+		</li>
+		<li class="li_customized">
+			<a href="javascript:void(0);"><i class="iconfont">&#xe62b;</i><i class="active">定制</i></a>
+			<div class="index_made">
+			</div>
+		</li>
+		<li><a href=""><i class="iconfont">&#xe650;</i><i class="active">我的</i></a></li>
+		<li><a href=""><i class="iconfont">&#xe611;</i><i class="active">分享</i></a></li>
+		<li><a href="#"><i class="iconfont">&#xe636;</i><i class="active">顶部</i></a></li>
+	</ul>
+	<div id="customized">
+		<div class="customized_mtk">
+			<div class="mtk_close">
+				<span><img src="../images/close1.png" ></span>
+			</div>
+			<div class="plan_wrap">
+				<div class="one">
+					<img src="../images/n01.png" >
+					<div class="from_div">
+						<form>
+							拍摄预算&nbsp;
+							<select id="select_budget">
+								<option value="4000以下">4000以下</option>
+								<option value="4000-5000">4000-5000</option>
+								<option value="5000-8000">5000-8000</option>
+								<option value="10000以上">10000以上</option>
+							</select>
+						</form>
+						
+					</div>
+					<div class="input_div">
+						<input type="submit" value="下一步" class="sub_next"/>
+					</div>	
+				</div>
+				
+				<div class="two">
+					<img src="../images/n02.png" >
+					<div class="place">
+						<a class="scene">国内</a>
+						<a class="scene">国外</a>
+						<a class="scene">大理站</a>
+						<a class="scene">丽江站</a>
+						<a class="scene">三亚站</a>
+						<a class="scene">重庆站</a>
+					</div>
+					<a class="pback01">返回重新选择</a>
+					<div class="input_div">
+						<input type="submit" value="下一步" class="sub_next"/>
+					</div>	
+				</div>	
+				
+				<div class="three">
+					<img src="../images/n03.png" >
+					<div class="phone_div">
+						手机号码&nbsp;
+						<input type="text" name="phone" placeholder="请输入您的手机号码" maxlength="11"/>
+						<span class="reg_tip"><img src="../images/green.png" >&nbsp;正确</span>
+						<span class="reg_tip"><img src="../images/error.png" >&nbsp;手机格式错误</span>
+					</div>	
+					<a class="pback01">返回重新选择</a>
+					<div class="sub_div">
+						<input type="submit" value="提交" class="sub_next"/>
+					</div>	
+				</div>	
+			</div>
+		</div>
+	</div>
+		
+		
+	<!-- 独家优势 -->
+	<div id="advantage">
+		<div class="wrapper">
+		    <h2 class="h2_title">拍摄基地/SHOOTING BASE</h2> 
+			<div class="adv_content">
+				<div class="adv_content_left">
+					<div class="adv_content_left_top">
+						<figure>
+							<img src="../images/adf_1.png" >
+						</figure>
+						<figure>
+							<img src="../images/adf_2.png" >
+						</figure>
+					</div>
+					<div class="adv_content_left_bottom">
+						<figure>
+							<img src="../images/adf_7.png" >
+						</figure>
+						<figure>
+							<img src="../images/adf_6.png" >
+						</figure>
+					</div>
+				</div>
+				<div class="adv_content_right">
+					<figure>
+						<img src="../images/adf_3.png" >
+					</figure>
+					<figure>
+						<img src="../images/adf_4.png" >
+					</figure>
+					<figure>
+						<img src="../images/adf_5.png" >
+					</figure>
+				</div>
+			</div>
+		</div>	
+	</div>
+	
+	
+    <!-- 公司简介 -->
+    <div id="company">
+        <div class="wrapper">
+            <div class="content">
+                <div class="content_left">
+                    <img src="../images/company_1.png" alt="">
+                </div> 
+                <div class="content_right">
+                    <div class="text">
+                        <div class="text_title">
+                            <span>艰苦创办</span>
+                            <span>HERD START</span>
+                            <span>READING ></span>
+                        </div>
+                        
+                        <div class="text_content">
+                            <p>
+                                金夫人是国内首屈一指的专业婚纱影楼。在国家改革开放政策的指引下，
+                                成长为重庆首家外商独资企业。2006年10月12日，金夫人获得全国摄影行业历史上第一个，
+                                也是唯一的一个中国驰名商标是在国家改革开放政策的指引下成长起来的重庆首家外商独资企业。1989年金夫人以6.5万美元的注册资金，迈出艰苦创业的第一步。
+                            </p>
+                            <p>
+                                最初金夫人的店面是在解放碑邹容路重庆剧场的地下室，面积只有380平方米，
+                                后期制作也同在一间地下室，条件非常艰苦，只有19个人,一个人千几个人的事,
+                                金夫人集团创始人周生俊先生事事亲历亲为，用实际行动感染着每一位员工的工作激
+                                情金夫人是重庆专业婚纱影楼当时重庆很少人懂婚纱照只知道结婚要拍“拍拍照”而一般人
+                                每月的平均工资不过70元左右金夫人的拍照定价却为98元/套和178元/套两种，
+                                结婚照的认知逐渐形成了现代婚纱摄影的新观念并辐射重庆各地结婚要拍
+                                一套婚纱照逐渐成为年轻新人们的一种时尚。
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="content_title">
+                        <h2>公司简介</h2>
+                        <h3>COMPANY PROFILE</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+    <!-- 拍摄基地 -->
+    <div id="phone_base">
+        <div class="wrapper">
+            <h2 class="h2_title">拍摄基地/SHOOTING BASE</h2> 
+			<div class="shooting_content">
+				<figure>
+					<div class="shooting_block">
+						<h2>夏光星朵</h2>
+						<h3>1300平米量主题打造</h3>
+						<h3>国内可移动鲜花的展现</h3>
+						<img src="../images/shooting_02.png" >
+					</div>
+					<div class="mc">
+						<!-- <h2>秘密花园</h2>
+						 <p>由专业花匠精心打造一年</p> -->
+					</div>	
+				</figure>
+				<figure>
+					<div class="shooting_block">
+						<img src="../images/shooting_01.png" >
+						<h2>秘密花园</h2>
+						<h3>由专业花匠精心打造一年</h3>
+						<h3>四季不同鲜花的展现</h3>
+					</div>
+					<div class="mc">	
+						<!-- <h2>秘密花园</h2>
+						 <p>由专业花匠精心打造一年</p> -->
+					</div>	
+				</figure>
+				<figure>
+					<div class="shooting_block">
+						<h2>夏光星朵</h2>
+						<h3>1300平米量主题打造</h3>
+						<h3>国内可移动鲜花的展现</h3>
+						<img src="../images/shooting_02.png" >
+					</div>
+					
+					<div class="mc">
+					</div>
+				</figure>
+				<figure>
+					<div class="shooting_block">
+						<img src="../images/shooting_03.png" >
+						<h2>梦幻空间</h2>
+						<h3>全中国花匠精心打造魔幻</h3>
+						<h3>四季不同鲜花的展现</h3>
+					</div>	
+					<img src="../images/shooting_03.png" class="mc_img">
+					<div class="mc">		
+						
+					</div>
+				</figure>	
+			</div>
+			<a class="a_enter" href="#">READING ></a>
+        </div>
+    </div>
+	
+	<!-- 真实客照 -->
+	<div id="real_guest">
+		<div class="wrapper">
+			 <h2 class="h2_title">真实客照/REAL GUEST</h2>
+			 <div class="real_guest_content">
+					<div class="rg_img">
+						<img src="../images/rg_1.png">
+					</div>
+					<div class="rg_text">
+						<div class="text_title">
+						    <span>HAVE A GENUINE</span>
+						</div>
+						<div class="text_content">
+						    <p>感情，没有取悦，只有真心实意的不离;人心，没有践踏，
+							只有相伴相依的温情。一段情，始于心动，无言也欢;一份爱，止于心冷，
+							无语也多。爱可以守望但不奢望，情可以包容但不纵窖。心员共鸣，才能继续心无旁骛，
+							才能长久。
+							</p>
+						    <p>
+							FEELINGS,NOTPLEASING,ONLY SINCERE,DO NOT LEAVE; PEOPLE,NO TRAMPLING,
+							ONLYWITHEACHINOTHERS WARMTH.ALOVE BEGINS WTH HEARTBEAT,WITHOUT WORDS 
+							AND JOY; ALOVESTOPS IN THEHEART COLD, AND HASNO LANGUAGE. LOVE CAN WATCH 
+							BUT NOT EXPECT,LOVE CAN TOLERATE BUTNOT CONNIVE. THERESONANCE OF THE 
+							MINDCAN CONTINUE.
+							</p>
+							<a class="a_enter" href="#">READING ></a>
+						</div>
+					</div>
+			 </div>
+		</div>
+	</div>	
+	
+	<!-- 选择摄影 -->
+	<div id="c_photography">
+		<div class="c_photography_top">	
+		</div>
+		<div class="wrapper">
+			<div class="cp_content">
+				<figure>
+					<img src="../images/cp_02.png" >
+					<figcaption>
+						<h2>陈默默</h2>
+						<h4>CLIFF</h4>
+						<p>业于中国美术美院上海美术学院，主修视觉传达。后专修摄影。他的作品常常出现在各大杂志内页及封面。
+						除了时尚杂志外</p>
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="../images/cp_03.png" >
+					<figcaption>
+						<h2>陈曼</h2>
+						<h4>CLIFF</h4>
+						<p>视觉艺术家，毕业于中央美术学院2003年陈漫开始为《青年视觉》杂志拍摄封面之后.</p>
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="../images/cp_04.png" >
+					<figcaption>
+						<h2>张悦</h2>
+						<h4>CLIFF</h4>
+						<p>国内顶尖时尚摄影师，1980年出生于北京他的摄影
+						作品有着令人过目难忘的华丽质感与灵动生气他对
+						色彩与光线的调配能力更是让人惊叹</p>
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="../images/cp_05.png" >
+					<figcaption>
+						<h2>犹乙</h2>
+						<h4>CLIFF</h4>
+						<p>尤奕是英国皇家摄影协会会员、中国宣传美术协会会员。
+						目前活跃在国内时尚界的一线商业摄影师，</p>
+					</figcaption>
+				</figure>
+			</div>
+			<a class="a_enter" href="#">READING ></a>
+		</div>
+	</div>
+	
+	<!-- 底部 -->
+	<footer>
+		<div class="wrapper">
+			<p>
+				oCOPYRIGHT 2009-2017版权所有重庆金夫人实业有限公司增值电信业务许可证:渝ICP备11007647号-13技术支持∶成都岸境科技
+			</p>
+		</div>
+	</footer>
+	
+	<script type="text/javascript" src="../js/index.js"></script>
+    <script>
+		//头部固定
+		var nav = document.getElementsByClassName('top_nav')[0];
+		var index_scroll = new index_scroll(nav);
+		index_scroll.init();
+		
+		//操作栏绑定事件
+		var operate_ul = new operate_ul();
+		operate_ul.init();
+		
+		//模态框所有事件
+		var mtk = new customized_event();
+		mtk.init();
+		
+        //轮播图
+	    var car_lb = new lb(carousel);
+		car_lb.init();
+		
+		// 首页广告
+		var idt = new indexAdTimer(index_ad);
+		idt.init();
+    </script>
+</body>
+</html>
